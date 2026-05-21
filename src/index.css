@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Clean Minimalism luxury gold palette */
+  --color-gold-50: #fefdf6;
+  --color-gold-100: #faf5d8;
+  --color-gold-200: #f4e8ae;
+  --color-gold-300: #e7d580;
+  --color-gold-400: #d4af37; /* Clean Minimalism Signature Gold */
+  --color-gold-500: #be9b2e;
+  --color-gold-600: #997c23;
+  --color-gold-700: #725b18;
+  --color-gold-800: #4c3c0f;
+  --color-gold-900: #2d2308;
+  --color-gold-950: #150f02;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+  }
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar to match the dark luxury design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59b27;
+}
